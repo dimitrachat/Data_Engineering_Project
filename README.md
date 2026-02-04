@@ -47,28 +47,42 @@ The pipeline follows a Medallion Architecture:
 
 ## Pipeline Structure
 
+```
+analytics/
+├── reports/                        # Generated visual reports (PNG outputs)
+│   ├── monthly_revenue_2019.png    # Monthly revenue trend visualization
+│   ├── quarterly_comparison_2019.png # Quarterly revenue comparison
+│   └── top_products_2019.png       # Top products by revenue chart
+│
+├── summaries/                      # Generated textual summaries
+│   └── executive_summary_2019.txt  # High-level executive business summary
+
 notebooks/
- ├── 01_sales_ingestion.ipynb        # Bronze ingestion
- ├── 02_sales_ETL.ipynb              # Silver transformations
- └── 03_sales_aggregated.ipynb       # Gold aggregations
+├── 01_sales_ingestion.ipynb      # Bronze layer ingestion
+├── 02_sales_ETL.ipynb            # Silver layer transformations
+└── 03_sales_aggregated.ipynb     # Gold layer aggregations
+└── 04_visualizations.ipynb         # Reporting & visualization generation (analytics/)
 
 src/
- ├── enforced_schemas.py             # CSV schema definitions
- ├── sqlqueries.py                   # SQL-based validations & transformations
- └── spark_session.py                # Spark session initialization
+├── enforced_schemas.py           # Input CSV schema definitions
+├── sqlqueries.py                 # SQL validations and transformations
+└── spark_session.py              # Spark session initialization
 
 utils/
- └── logger.py                       # Custom logging utility
+└── logger.py                     # Custom logging utility
 
 data/
- ├── raw/                            # Raw CSV files
- ├── bronze/                         # Bronze Parquet output
- ├── cleansed/                       # Silver Parquet output (partitioned)
- └── gold/                           # Gold aggregated output
+├── raw/                          # Raw input CSV files
+├── bronze/                       # Bronze Parquet outputs
+├── cleansed/                     # Silver Parquet outputs (partitioned)
+└── gold/                         # Gold aggregated datasets
 
 Logs/
- └── <job_name>/
-     └── YYYY-MM-logs.txt            # Monthly execution logs
+└── <job_name>/
+    └── YYYY-MM-logs.txt          # Monthly execution logs
+```
+
+
 
 ## Data Quality & Validation
 
