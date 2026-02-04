@@ -32,6 +32,7 @@ def log(txt)->None:
 
     log_dir = os.path.join(data_path, 'data')
     log_filename = f"{now.strftime('%Y-%m')}-logs.txt"
+    log_path = os.path.join(data_path, log_filename)
     log_path = os.path.join(log_dir,log_filename)
 
     # Ensure to create the log directory if it doesn't exist
