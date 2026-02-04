@@ -165,10 +165,25 @@ In a production environment, logs would be centralized in a cloud logging soluti
 
 Each step depends on the output of the previous layer.
 
+## Additional - Visualizations & Reporting 
+The project includes a dedicated reporting and visualization layer implemented in
+notebooks/04_visualizations.ipynb.
+This notebook consumes gold-level aggregated datasets and produces:
+
+- Revenue trend visualizations (monthly and quarterly)
+- Top products performance charts
+- Executive-level textual summaries
+
+All generated outputs are stored under the analytics/ directory:
+
+- analytics/reports/ contains visual reports in PNG format
+- analytics/summaries/ contains high-level textual summaries intended for business stakeholders
+
 ## Future Improvements
 
 - Implement an incremental refresh strategy to process only newly ingested or updated data
 - Improve scalability, performance, and cost efficiency as data volume increases
+- Distribute the visualization reports via email to executive stakeholders automatically on a scheduled basis
 
 ---
 
