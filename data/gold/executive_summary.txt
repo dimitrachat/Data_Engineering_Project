@@ -1,0 +1,27 @@
+
+============================================================
+EXECUTIVE SUMMARY - 2019 SALES PERFORMANCE
+============================================================
+
+ANNUAL METRICS:
+  • Total Revenue:        $34,465,075.45
+  • Total Orders:         178,437
+  • Total Units Sold:     208,730
+  • Average Order Value:  $193.15
+
+BEST PERFORMING MONTH:
+  • Month:               Dec
+  • Revenue:             $4,608,220.13
+  • Orders:              24,004
+
+LOWEST PERFORMING MONTH:
+  • Month:               Jan
+  • Revenue:             $8,670.29
+  • Orders:              31
+
+TOP 3 PRODUCTS BY REVENUE:
+  1. Macbook Pro Laptop             $8,032,500.00
+  2. iPhone                         $4,792,900.00
+  3. ThinkPad Laptop                $4,127,958.72
+
+============================================================

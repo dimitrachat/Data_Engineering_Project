@@ -1,0 +1,15 @@
+2026-02-03 02:44:42:Spark Session initialized
+2026-02-03 02:44:43:Spark DataFrame created from bronze sales parquet files
+2026-02-03 02:44:44:Temporary view 'sales_data' created from sales df
+2026-02-03 02:44:44:Check for nulls in all rows of sales_data
+2026-02-03 02:44:44:Check for nulls in each column of sales_data
+2026-02-03 02:44:46:No fully null rows detected
+2026-02-03 02:44:46:No nulls detected in any column
+2026-02-03 02:44:48:Data profiling completed
+2026-02-03 02:44:48:Order_Date successfully converted to timestamp
+2026-02-03 02:44:48:Order_Year and Order_Month columns created from Order_Date
+2026-02-03 02:44:48:Check for duplicate rows in sales_data
+2026-02-03 02:44:50:Total duplicate rows detected: 264
+2026-02-03 02:44:50:Duplicate rows removed from sales_data_enriched
+2026-02-03 02:44:50:Start ingestion of Parquet file to cleansed layer
+2026-02-03 02:44:52:Cleansed sales data written to ../data/cleansed/sales partitioned by year and month

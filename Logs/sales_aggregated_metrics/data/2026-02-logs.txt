@@ -1,0 +1,2 @@
+2026-02-03 02:59:00:Spark Session initialized
+2026-02-03 02:59:01:Spark DataFrame created from silver - cleansed sales parquet files
